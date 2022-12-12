@@ -5,6 +5,10 @@
     font-weight: bolder;
 }
 
+body, .container {
+    height: 100vh;
+}
+
 .menu>ul, .settings>ul {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,7 @@ li>object {
 }
 
 .sidebar {
+    border-style: solid; 
     display: grid;
     grid-template-rows: 10vh 50vh 48vh;
     background-color: lightseagreen;
@@ -57,6 +62,7 @@ li>object {
 }
 
 .logo {
+    border-style: solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,12 +80,14 @@ li>object {
 }
 
 .menu {
-    
+    min-height: 500px;
+    border-style: solid;
     
 }
 
 .settings {
-    min-height: 300px;
+    border-style: solid;
+    
 }
 
 .search-container {
