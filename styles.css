@@ -5,17 +5,18 @@
     font-weight: bolder;
 }
 
-body, .container {
+html, body, .container {
     height: 100vh;
 }
 
 .menu>ul, .settings>ul {
     display: flex;
     flex-direction: column;
+    
 }
 .menu>ul>li, .settings>ul>li {
     display: grid;
-    grid-template-columns: 7vh auto;
+    grid-template-columns: 5rem auto;
 }
 
 li>h2 {    
@@ -27,27 +28,47 @@ li>h2 {
     margin-right: auto;
 }
 
-li>object {
-    width: 24px;
-    height: 24px;
+input {
+    position: relative;
+    top: .9rem;
+    
 }
+
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 28vh auto;
-    grid-template-rows: 10vh auto;
+    grid-template-columns: 20rem auto;
+    grid-template-rows: 12rem auto;
 
 }
 
 .header {
+    padding-top: 5px;
+    padding-left: 4rem;
+    padding-right: 4rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 50rem auto 22rem;
+    grid-template-rows: 5rem 6.8rem;
+}
+
+
+
+.user-container {
+    margin-left: auto;
+    display: grid;
+    grid-template-columns:4rem 5rem auto;
+    justify-items: center;
+    
+
 }
 
 .sidebar {
-    border-style: solid; 
+    /* border-style: solid;  */
+    min-width: 20rem;
     display: grid;
-    grid-template-rows: 10vh 50vh 48vh;
+    grid-template-rows: 6rem 27rem auto;
     background-color: lightseagreen;
     color: white;
     grid-column: 1 / 2;
@@ -62,40 +83,52 @@ li>object {
 }
 
 .logo {
-    border-style: solid;
+    /* border-style: solid; */
     display: flex;
     align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    
-    
+    justify-content: left;
+    /* display: grid;
+    grid-template-columns: 1fr 5fr;     */
 }
 
-#logo {
+#main-logo {
+    position: relative;
     fill: white;
     padding: 14px;
-    height: 36px;
-    width: 36px;
+    height: 3rem;
+    width: 2rem;
+}
+#logo {
+    position: relative;
+    margin-left: auto;
+    fill: white;
+    padding: 14px;
+    height: 2rem;
+    width: 2rem;
 }
 
 .menu {
-    min-height: 500px;
-    border-style: solid;
+    /* border-style: solid; */
     
 }
 
 .settings {
-    border-style: solid;
+    /* border-style: solid; */
     
 }
 
-.search-container {
+.search-form {
+    display: grid;
+    grid-template-columns: 64px auto;
 
 }
 
-.user {
-
+.search-field {
+    background-color: lightgrey;
+    width: 42rem;
+    height: 32px;
+    border-radius: 25px;
+    border-style: none;
 }
 
 .projects {
@@ -113,3 +146,13 @@ li>object {
 .trending {
 
 }
+
+#user {
+    width: 52px;
+    height: 52px;
+}
+#user-greeting {
+    width: 84px;
+    height: 84px;
+}
+

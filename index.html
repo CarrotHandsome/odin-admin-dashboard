@@ -12,12 +12,12 @@
     <div class="container">
         <div class="sidebar">
             <div class="logo">
-                <img id="logo" src="SVGs/logo.svg" alt="logo"></img>
+                <img id="main-logo" src="SVGs/logo.svg" alt="logo"></img>
                 <h1>Dashboard</h1>
             </div>
             <div class="menu">
                 <ul>
-                    <li><object id="logo" data="SVGs/home.svg" type="image/svg+xml" alt="logo"></object> <h2>Home</h2></li>
+                    <li><img id="logo" src="SVGs/home.svg" alt="logo"></img> <h2>Home</h2></li>
                     <li><img id="logo" src="SVGs/profile.svg" alt="logo"></img> <h2>Profile</h2></li>
                     <li><img id="logo" src="SVGs/message-reply.svg" alt="logo"></img> <h2>Messages</h2></li>
                     <li><img id="logo" src="SVGs/clock.svg" alt="logo"></img> <h2>History</h2></li>
@@ -34,10 +34,27 @@
                 </ul>
             </div>
         </div>
+
         <div class="header">
-            <div class="search-container"></div>
-            <div class="user"></div>
+            <div class="search-container">
+                <form class="search-form">
+                    <label for="search"><img id="logo" src="SVGs/search.svg" alt="logo"></label>
+                    <input class="search-field" name="search" type="text"
+                </form>
+                <div></div>
+            </div>
+            <div class="header-buffer"></div>
+            <div class="user-container">
+                <img id="logo" src="SVGs/bell-ring-outline.svg" alt="logo">
+                <img id="user" src="PNGs/dashboard-user-icon.PNG" alt="logo">
+                <h2>Morgan Oakley</h2>
+            </div>
+            <div class="greeting-container">
+                <img id="user-greeting" src="PNGs/dashboard-user-icon.PNG" alt="logo">
+            </div>
+            <div class="contribute-container"></div>
         </div>
+
         <div class="main">
             <div class="projects"></div>
             <div class="announcements">
